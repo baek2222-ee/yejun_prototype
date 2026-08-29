@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no" />
+  <meta name="theme-color" content="#020914" />
+  <title>ORBIT SIGNAL — YEJUN Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="stage-shell" aria-label="ORBIT SIGNAL 예준 온기의 별 프로토타입">
+    <section id="game" class="game" aria-live="polite">
+      <img id="scene-image" class="scene-image" alt="게임 장면" draggable="false" />
+      <div id="scene-shade" class="scene-shade"></div>
+      <div id="interaction-layer" class="interaction-layer"></div>
+      <div id="hud-layer" class="hud-layer"></div>
+      <button id="menu-hit" class="menu-hit" aria-label="메뉴 열기"></button>
+      <div id="toast" class="toast" role="status"></div>
+      <div id="scanline" class="scanline" aria-hidden="true"></div>
+      <div id="glitch" class="glitch" aria-hidden="true"></div>
+    </section>
+  </main>
+
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <div class="drawer-head">
+      <div>
+        <div class="eyebrow">ORBIT SIGNAL</div>
+        <h2>ORBIT LOG</h2>
+      </div>
+      <button id="drawer-close" class="icon-button" aria-label="메뉴 닫기">×</button>
+    </div>
+    <div class="drawer-body">
+      <section class="log-section">
+        <div class="section-title">CH.01 · YEJUN / WARMTH</div>
+        <div id="log-items" class="log-items"></div>
+      </section>
+      <section class="menu-section">
+        <button id="sound-toggle" class="menu-button">SOUND · ON</button>
+        <button id="restart" class="menu-button danger">처음부터 다시 시작</button>
+      </section>
+      <p class="drawer-note">예준의 별 프로토타입입니다. 탐사 허브에서 불꽃, 호수, 생명체를 각각 별도의 조사 화면으로 확인할 수 있습니다.</p>
+    </div>
+  </aside>
+  <div id="drawer-backdrop" class="drawer-backdrop"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
